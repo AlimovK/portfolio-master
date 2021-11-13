@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+/* font-family: 'Mochiy Pop One', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Yuji Boku', serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Mukta:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: #d4e5ec;
+}
