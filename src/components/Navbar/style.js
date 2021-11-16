@@ -31,6 +31,9 @@ Wrapper.Item = styled.div`
   align-items: center;
   margin-left: auto;
   justify-content: space-around;
+  @media (max-width: 868px) {
+    display: none;
+  }
 `;
 export const Item = styled.div`
   cursor: pointer;

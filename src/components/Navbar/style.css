@@ -4,3 +4,7 @@
   /* color: black; */
   font-family: "Indie Flower", cursive;
 }
+.navbar {
+  background: #00719e !important;
+  color: white !important;
+}
