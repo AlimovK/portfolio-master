@@ -1,10 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mochiy+Pop+One&family=Mukta:wght@200&family=Roboto:wght@300&family=Yuji+Boku&display=swap");
-.title {
-  font-size: 38px;
-  /* color: black; */
-  font-family: "Indie Flower", cursive;
+.Main {
+  font-family: "Roboto", sans-serif;
+  background: #023447 !important;
 }
-.navbar {
-  background: #00719e !important;
+.navbar a {
   color: white !important;
+  font-family: "Roboto";
+}
+
+.navbar-nav {
+  margin-left: auto !important;
+}
+.navbar-nav > li > a {
+  border-bottom: 0.1875rem solid rgba(255, 255, 255, 0);
+}
+nav ul li {
+  text-transform: uppercase;
+  padding: 5px;
+  margin-left: 10px;
+}
+nav div {
+  padding: 5px;
+}
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:focus {
+  border-bottom: 0.1875rem solid orange;
+}
+.navbar-toggler-icon :focus {
+  border: none;
 }
