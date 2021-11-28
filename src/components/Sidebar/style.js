@@ -45,30 +45,29 @@ export const Line = styled.div`
   width: 100%;
   background: #fff;
 `;
-export const IconWrapper=styled.div`
-margin-top:150px;
-width:70%;
-display:flex;
-align-items:center;
-justify-content:space-around;
-`
+export const IconWrapper = styled.div`
+  margin-top: 150px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+`;
 export const Github = styled(github)`
   width: 20px;
   height: 20px;
-  cursor:pointer;
-  :hover{
-    fill:red;
+  cursor: pointer;
+  :hover {
+    fill: red;
   }
-
 `;
 
 export const Gmail = styled(gmail)`
   width: 20px;
   height: 20px;
-  fill:#bdbdc5;
+  fill: #bdbdc5;
 `;
 export const Linkedin = styled(linkedin)`
   width: 20px;
   height: 20px;
-  cursor:pointer;
+  cursor: pointer;
 `;
