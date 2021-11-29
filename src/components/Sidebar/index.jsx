@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import rasm from "../../assets/img/logo.png";
+import rasm from "../../assets/img/K.png";
 import {
   Container,
   IconWrapper,
