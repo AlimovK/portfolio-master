@@ -7,10 +7,10 @@ import { ReactComponent as linkedin } from "../../assets/icons/linkedin.svg";
 //color #bdbdc5
 
 export const Container = styled.div`
-  width: 120px;
   position: relative;
+  width: 120px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,16 +18,30 @@ export const Container = styled.div`
   background: #181818;
 `;
 export const LogoWrapper = styled.div`
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 0;
+  flex-direction: column;
   width: 120px;
   height: 150px;
   background: #000;
-  color: white;
+  color: #bdbdc5;
   cursor: pointer;
+`;
+export const Logo = styled.img`
+  display: flex;
+  width: 50px;
+  height: 50px;
+`;
+export const Des = styled.div`
+  display: flex;
+  text-align: center;
+  font-size: 12px;
+`;
+export const Wrapper = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 `;
 export const Item = styled.div`
   line-height: 40px;
@@ -36,6 +50,8 @@ export const Item = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 0.2s linear;
+
   :hover {
     color: #2ad0b7;
   }
@@ -46,7 +62,7 @@ export const Line = styled.div`
   background: #fff;
 `;
 export const IconWrapper = styled.div`
-  margin-top: 150px;
+  margin-bottom: 150px;
   width: 70%;
   display: flex;
   align-items: center;
@@ -56,8 +72,8 @@ export const Github = styled(github)`
   width: 20px;
   height: 20px;
   cursor: pointer;
-  :hover {
-    fill: red;
+  :hover path {
+    fill: #2ad0b7;
   }
 `;
 
@@ -70,4 +86,7 @@ export const Linkedin = styled(linkedin)`
   width: 20px;
   height: 20px;
   cursor: pointer;
+  :hover path {
+    fill: #2ad0b7;
+  }
 `;
