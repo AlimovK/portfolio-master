@@ -30,8 +30,8 @@ export const LogoWrapper = styled.div`
 `;
 export const Logo = styled.img`
   display: flex;
-  width: 50px;
-  height: 50px;
+  width: 120px;
+  height: 120px;
 `;
 export const Des = styled.div`
   display: flex;

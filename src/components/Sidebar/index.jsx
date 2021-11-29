@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import rasm from "../../assets/img/K.png";
+import rasm from "../../assets/img/logo.png";
 import {
   Container,
   IconWrapper,
@@ -19,7 +19,7 @@ const Sidebar = () => {
   return (
     <Container>
       <LogoWrapper>
-        <Logo scr={rasm} alt="logo" />
+        <Logo src={rasm} alt="logo" />
         <Des>Web developer</Des>
       </LogoWrapper>
       <Wrapper>
