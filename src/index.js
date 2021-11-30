@@ -1,7 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Hamburger from "./components/hamburger";
-import Navbar from "./components/MobileNavbar";
 import "./index.css";
 import Root from "./root";
 

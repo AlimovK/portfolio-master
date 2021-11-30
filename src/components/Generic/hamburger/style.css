@@ -1,0 +1,40 @@
+@media only screen and (max-width: 1300px) {
+  .toggle {
+    position: relative;
+    width: 60px;
+    height: 50px;
+    background: black;
+    border-radius: 5px;
+    display: flex;
+    margin: 10px;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  span {
+    position: absolute;
+    background: #bdbdc5;
+    width: 35px;
+    height: 3px;
+    border-radius: 4px;
+    transition: 0.5s;
+  }
+  span:nth-child(1) {
+    transform: translateY(-13px);
+  }
+  span:nth-child(2) {
+    transform: translateY(13px);
+  }
+  .active span:nth-child(3) {
+    transform: translateX(60px);
+  }
+
+  .active span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+  }
+  .active span:nth-child(2) {
+    transform: translateY(0) rotate(315deg);
+  }
+}

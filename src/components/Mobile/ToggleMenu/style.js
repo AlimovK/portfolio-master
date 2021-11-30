@@ -1,47 +1,47 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { ReactComponent as github } from "../../assets/icons/github.svg";
-import { ReactComponent as linkedin } from "../../assets/icons/linkedin.svg";
-
-//hover #2ad0b7
-//color #bdbdc5
+import { ReactComponent as linkedin } from "../../../assets/icons/linkedin.svg";
+import { ReactComponent as github } from "../../../assets/icons/github.svg";
 
 export const Container = styled.div`
-  position: relative;
-  width: 120px;
-  align-items: center;
-  justify-content: space-between;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  color: #bdbdc5;
-  background: #181818;
+  display: none;
   @media (max-width: 1300px) {
-    display: none;
+    position: absolute;
+    max-width: 1300px;
+    width: 100%;
+    min-width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #bdbdc5;
+    background: #181818;
   }
 `;
-export const LogoWrapper = styled(Link)`
+
+export const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 120px;
-  height: 150px;
+  width: 100%;
+  height: 200px;
   background: #000;
-  color: #bdbdc5;
-  cursor: pointer;
-  text-decoration: none;
   :hover {
     color: #bdbdc5;
   }
 `;
 export const Logo = styled.img`
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
 `;
 export const Des = styled.div`
   display: flex;
-  text-align: center;
+  color: #bdbdc5;
+  text-decoration: red;
   font-size: 12px;
 `;
 export const Wrapper = styled.div`
@@ -53,7 +53,7 @@ export const Item = styled(Link)`
   text-decoration: none;
   font-weight: 500;
   color: #bdbdc5;
-  line-height: 40px;
+  line-height: 50px;
   font-family: "Outfit", sans-serif;
   width: 100%;
   display: flex;
@@ -72,11 +72,14 @@ export const Line = styled.div`
   background: #fff;
 `;
 export const IconWrapper = styled.div`
-  margin-bottom: 150px;
-  width: 70%;
+  margin-bottom: 50px;
+  width: 10%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  @media (max-width: 800px) {
+    width: 30%;
+  }
 `;
 export const Github = styled(github)`
   width: 22px;

@@ -1,6 +1,6 @@
 import React from "react";
 import Body from "../../components/Body";
 
-const BodyPage = () => <Body />;
+const Index = () => <Body />;
 
-export default BodyPage;
+export default Index;

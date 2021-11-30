@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.css";
 import rasm from "../../assets/img/K.png";
 import {
   Container,
@@ -18,25 +17,28 @@ import {
 const Sidebar = () => {
   return (
     <Container>
-      <LogoWrapper>
+      <LogoWrapper to={"/"}>
         <Logo src={rasm} alt="logo" />
         <Des>Web developer</Des>
       </LogoWrapper>
       <Wrapper>
         <Line />
-        <Item>About</Item>
+        <Item to={"/about"}>About</Item>
         <Line />
-        <Item>My skills</Item>
+        <Item to={"/skills"}>My skills</Item>
         <Line />
-        <Item>Work</Item>
+        <Item to={"/work"}>Work</Item>
         <Line />
-        <Item>Contact</Item>
+        <Item to={"/contact"}>Contact</Item>
         <Line />
       </Wrapper>
       <IconWrapper>
-        <Github />
-        {/* <Gmail /> */}
-        <Linkedin className="hoverIcon" />
+        <a href="https://github.com/AlimovK">
+          <Github />
+        </a>
+        <a href="https://www.linkedin.com/in/alimov-kamron/">
+          <Linkedin />
+        </a>
       </IconWrapper>
     </Container>
   );

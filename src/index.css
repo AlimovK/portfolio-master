@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit&family=Roboto:wght@300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,5 +8,5 @@
   font-family: "Roboto", sans-serif;
 }
 body {
-  background: #d4e5ec;
+  background: #1d1d1d;
 }

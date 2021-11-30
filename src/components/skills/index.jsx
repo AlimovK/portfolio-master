@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Hamburger = () => {
+const Skills = () => {
     return (
         <div>
-            
+            Skills
         </div>
     )
 }
 
-export default Hamburger
+export default Skills
