@@ -1,15 +1,19 @@
 import styled from "styled-components";
+
 export const Container = styled.div`
   display: flex;
-  padding-left: 100px;
   color: white;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 100vh;
   height: 100%;
-  border: 1px solid red;
+  min-height: 100vh;
+  flex-direction: column;
   min-width: 300px;
   width: 100%;
+`;
+export const Main = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+  margin-bottom: 13rem;
 `;
 export const Title = styled.div`
   display: flex;
@@ -18,8 +22,16 @@ export const Title = styled.div`
   font-size: 80px;
   font-weight: 900;
 `;
-Title.des = styled.div`
+export const HtmlDes = styled.div`
+  margin-bottom: auto;
   display: flex;
+  font-size: 18px;
+  font-family: "Caveat", cursive;
+  color: #4f4f4f;
+`;
+
+Title.Des = styled.div`
+  /* display: flex; */
   letter-spacing: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
