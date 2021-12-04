@@ -29,7 +29,7 @@ button {
   line-height: 40px;
   font-weight: 500;
   line-height: 1;
-  margin: 0.5em;
+  /* margin: 0.5em; */
   padding: 1em 2em;
 }
 
@@ -40,4 +40,10 @@ h1 {
 code {
   color: #e4cb58;
   font: inherit;
+}
+@media (max-width: 500px) {
+  button {
+    width: 150px;
+    padding: 10px;
+  }
 }

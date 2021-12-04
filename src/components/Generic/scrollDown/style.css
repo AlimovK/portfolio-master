@@ -1,0 +1,52 @@
+.scroll-container {
+  margin: 15px;
+  width: 30px;
+  height: 60px;
+  border: 3px solid #2ad0b7;
+  border-radius: 15px;
+  position: relative;
+}
+
+.scroller {
+  width: 16px;
+  border-radius: 8px;
+  background-color: #2ad0b7;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  bottom: 34px;
+  animation: scroller 1500ms ease-out infinite;
+}
+
+@keyframes scroller {
+  0% {
+    bottom: 34px;
+  }
+  5% {
+    top: 4px;
+  }
+  32% {
+    bottom: 4px;
+  }
+  66% {
+    top: 34px;
+    bottom: 4px;
+  }
+  100% {
+    top: 4px;
+    bottom: 34px;
+  }
+}
+@media (max-width: 500px) {
+  .scroll-container {
+    width: 20px;
+    height: 40px;
+  }
+  .scroller {
+    width: 10px;
+    border-radius: 5px;
+    top: 1px;
+    left: 2px;
+    bottom: 3px;
+  }
+}

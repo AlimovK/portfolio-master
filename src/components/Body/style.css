@@ -1,0 +1,3 @@
+.animate__animated :hover {
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+}

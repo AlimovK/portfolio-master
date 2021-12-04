@@ -1,7 +1,10 @@
 import React from "react";
+import "animate.css";
+import "./style.css";
 import Button from "../Generic/button";
 import logo from "../../assets/img/logo1.png";
-import { Container, HtmlDes, K, Main, MainWrapper, Title } from "./style";
+import { Container, HtmlDes, K, Main, Title } from "./style";
+import ScrollDonw from "../Generic/scrollDown";
 
 const Body = () => {
   const html = "<html>";
@@ -19,10 +22,10 @@ const Body = () => {
       <Main>
         <Title>
           <HtmlDes>{h1[0]} </HtmlDes>
-          <div>Hi,</div>
+          <div className=" animate__rubberBand">Hi,</div>
           <div>
             I'm
-            <K src={logo} />
+            <K className="animate__animated animate__bounceInDown" src={logo} />
             amron
           </div>
           <div>web developer</div>
@@ -35,6 +38,7 @@ const Body = () => {
         </Title.Des>
         <Button />
       </Main>
+      <ScrollDonw />
     </Container>
     // </MainWrapper>
   );
