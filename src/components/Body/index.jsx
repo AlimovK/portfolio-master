@@ -5,6 +5,7 @@ import Button from "../Generic/button";
 import logo from "../../assets/img/logo1.png";
 import { Container, HtmlDes, K, Main, Title } from "./style";
 import ScrollDonw from "../Generic/scrollDown";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const html = "<html>";
@@ -12,7 +13,6 @@ const Body = () => {
   const h1 = ["<h1>", "</h1>"];
   const p = ["<p>", "</p>"];
   return (
-    // <MainWrapper>
     <Container>
       <HtmlDes>
         {html}
@@ -36,11 +36,12 @@ const Body = () => {
           Front-End Developer
           <HtmlDes>{p[1]} </HtmlDes>
         </Title.Des>
-        <Button />
+        <Link to="contact">
+          <Button />
+        </Link>
       </Main>
       <ScrollDonw />
     </Container>
-    // </MainWrapper>
   );
 };
 
