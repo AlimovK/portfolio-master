@@ -51,9 +51,8 @@ export const Wrapper = styled.div`
 `;
 export const Item = styled(Link)`
   text-decoration: none;
-  font-weight: 500;
   color: #bdbdc5;
-  line-height: 40px;
+  line-height: 50px;
   font-family: "Outfit", sans-serif;
   width: 100%;
   display: flex;

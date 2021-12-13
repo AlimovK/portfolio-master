@@ -15,8 +15,11 @@ const About = () => {
         <HtmlDes>{p[0]}</HtmlDes>
         Hello. My name is Kamron Alimov. <br />
         I'm front-end developer located in Uzbekistan.
-        <br /> I enjoy creating things that live on the internet. My interest in
-        web development started back in 2020
+        <br /> <br /> I enjoy creating things that live on the internet. My
+        interest in web development started back in 2020
+        <br /> <br />
+        Interested in the entire frontend spectrum and and working ambitious
+        projects positive people.
         <HtmlDes>{p[1]}</HtmlDes>
       </Des>
     </Container>
