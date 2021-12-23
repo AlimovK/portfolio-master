@@ -24,15 +24,10 @@ const ToggleMenu = () => {
         <Des>Web developer</Des>
       </LogoWrapper>
       <Wrapper>
-        <Line />
-        <Item to="/about">About</Item>
-        <Line />
+        <Item to="/about" top>About</Item>
         <Item to="/skills">My Skills</Item>
-        <Line />
         <Item to="/work">Work</Item>
-        <Line />
         <Item to="/contact">Contact</Item>
-        <Line />
       </Wrapper>
       <IconWrapper>
         <Github />

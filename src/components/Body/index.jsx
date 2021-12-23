@@ -1,6 +1,5 @@
 import React from "react";
 import "animate.css";
-import "./style.css";
 import Button from "../Generic/button";
 import logo from "../../assets/img/logo1.png";
 import { Container, HtmlDes, K, Main, Title } from "./style";

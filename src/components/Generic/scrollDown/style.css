@@ -1,52 +1,56 @@
-.scroll-container {
-  margin: 15px;
-  width: 30px;
-  height: 60px;
-  border: 3px solid #2ad0b7;
-  border-radius: 15px;
+.container{
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
 }
 
-.scroller {
-  width: 16px;
-  border-radius: 8px;
-  background-color: #2ad0b7;
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  bottom: 34px;
-  animation: scroller 1500ms ease-out infinite;
+.scroll-down
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
 }
-
-@keyframes scroller {
-  0% {
-    bottom: 34px;
-  }
-  5% {
-    top: 4px;
-  }
-  32% {
-    bottom: 4px;
-  }
-  66% {
-    top: 34px;
-    bottom: 4px;
-  }
-  100% {
-    top: 4px;
-    bottom: 34px;
-  }
+.scroll-down span:nth-child(2)
+{
+    animation-delay: -0.2s;
 }
-@media (max-width: 500px) {
-  .scroll-container {
+.scroll-down span:nth-child(3)
+{
+    animation-delay: -0.4s;
+}
+.scroll-down span
+{
+    display: block;
     width: 20px;
-    height: 40px;
-  }
-  .scroller {
-    width: 10px;
-    border-radius: 5px;
-    top: 1px;
-    left: 2px;
-    bottom: 3px;
-  }
+    height: 20px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+@keyframes animate
+{
+    0%
+  {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%
+  {
+        opacity: 1;
+    }
+    100%
+  {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+@media (max-width:600px) {
+    .container{
+        width:  50px;
+    }
 }

@@ -2,8 +2,12 @@ import "./style.css";
 
 const ScrollDonw = () => {
   return (
-    <div class="scroll-container">
-      <div class="scroller"></div>
+    <div className="container">
+    <div class="scroll-down">
+        <span></span>
+        <span></span>
+        <span></span>
+     </div>
     </div>
   );
 };

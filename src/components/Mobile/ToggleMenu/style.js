@@ -59,6 +59,8 @@ export const Item = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top:${({top}) =>top && `1px solid #333333`};
+  border-bottom: 1px solid #333333;
   cursor: pointer;
   transition: all 0.2s linear;
 
