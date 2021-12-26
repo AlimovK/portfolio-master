@@ -7,7 +7,8 @@ import Root from "./root";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Particles />
+    <Root/>
+    {/* <Particles /> */}
   </React.StrictMode>,
   document.getElementById("root")
 );
