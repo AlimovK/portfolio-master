@@ -22,16 +22,18 @@ const Sidebar = () => {
         <Des>Web developer</Des>
       </LogoWrapper>
       <Wrapper>
-        <Item to={"/about"} top>About</Item>
+        <Item to={"/about"} top>
+          About
+        </Item>
         <Item to={"/skills"}>My skills</Item>
         <Item to={"/work"}>Work</Item>
         <Item to={"/contact"}>Contact</Item>
       </Wrapper>
       <IconWrapper>
-        <a href="https://github.com/AlimovK">
+        <a target="_blank" href="https://github.com/AlimovK">
           <Github />
         </a>
-        <a href="https://www.linkedin.com/in/alimov-kamron/">
+        <a target="_blank" href="https://www.linkedin.com/in/alimov-kamron/">
           <Linkedin />
         </a>
       </IconWrapper>
